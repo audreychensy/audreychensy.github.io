@@ -3,16 +3,23 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
-		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src='https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js'></script>
 	</head>
 
 <body>
 
 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src='https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js'></script>
+
 <div id="coverpage">
-  <img src="https://photos-6.dropbox.com/t/2/AACT3NWIsPT5GEsnoXUPvctvlE4YYdLxA4Pq60ohCl1cdw/12/383547005/jpeg/32x32/1/_/1/2/cover.jpg/EJjlzIYDGM6wASACKAIoBA/NBsoJVp8GLBE5D59p7k5teA-Q21zvzsLWym5CnVH6co?size=1600x1200&size_mode=3">
+  <img src="https://photos-6.dropbox.com/t/2/AACT3NWIsPT5GEsnoXUPvctvlE4YYdLxA4Pq60ohCl1cdw/12/383547005/jpeg/32x32/1/_/1/2/cover.jpg/EJjlzIYDGM6wASACKAIoBA/NBsoJVp8GLBE5D59p7k5teA-Q21zvzsLWym5CnVH6co?size=1600x1200&size_mode=3" height=100vh>
     <a class="arrow bounce" href="#menu"><i class="fa fa-angle-double-down" style="font-size:36px"></i></a>
 </div>
 
@@ -28,6 +35,8 @@
 
 
 <div class="row">
+    
+
     <div id="PROFILE" class="col-12 subHeader">
         <h1>PROFILE</h1>
         <img alt="coverpicture"  src="https://photos-5.dropbox.com/t/2/AADXVXKlX2jPbrqI2T2g5WVB43NTVxA65gM8LKplE6tQRg/12/383547005/jpeg/32x32/1/_/1/2/Photo%202018-04-03%2C%206%2059%2014%20PM.jpg/EJjlzIYDGJOwASACKAIoBA/Kc9XEPhvYn4yRAOgz_MH997Oh8k815Tx5v71Wy9lm-U?size=1600x1200&size_mode=3"
@@ -199,10 +208,17 @@
         <center style="font-size:20px"> I have been dancing since I was a little kid, and hip hop has been my favourite.<br> I love it because it is so much more than just dancing, <br>it is about the good vibes and the incredibly supportive community. <br>At uWaterloo hip hop, <br>I
             met so many talented yet humble people,<br> who are always encouraging and supporting others. </center>
         <p style="font-size:25px"> Here's a short video I put together with available clips.</p>
-        <video width="400" id="danceVideo">
+      
+
+      <video width="400" id="danceVideo">
          <source src="https://www.dropbox.com/s/ldj7hvvjikrjcfd/Video%202018-04-02%2C%207%2034%2018%20PM.mov?dl=1" type="video/mp4" />
-      </video>
-        <div class="col-12"></div>
+        </video>
+              <div class="col-12"></div>
+        <div class="col-12">
+          <p style='font-size:15px'> If the video is not showing properly,</p>
+      <button class='linkBtn'><a href="https://www.dropbox.com/s/ldj7hvvjikrjcfd/Video%202018-04-02%2C%207%2034%2018%20PM.mov?dl=0"> Here's the link </a></button>
+          
+      </div>
     </div>
 
 
@@ -211,8 +227,9 @@
         <h1>CONTACT ME<br><br></h1>
         <p>Let's get in touch.</p>
         <a href="http://www.linkedin.com/in/audrey-chen-1026" title="LinkedIn"><i class="fa fa-linkedin-square" style="font-size:100px;color:#007BB6"></i> </a>
-        <a href="mailto:audrey.chen@edu.uwaterloo.ca?Subject=job%20opportunity" class="fa fa-envelope-o" style="font-size:105px;color:#007BB6;padding:40px"></a>
+        <a href="mailto:audrey.chen@edu.uwaterloo.ca?Subject=job%20opportunity" title="Email" class="fa fa-envelope-o" style="font-size:105px;color:#007BB6;padding:40px"></a>
     </div>
+</div>
 </div>
 
 
@@ -237,34 +254,6 @@ $(document).ready(function(){
    });
 });
 </script>
-	
-	
-<script>
-
-   $("body").on('touchstart',function(e){
-   	 var id = $(this).attr('id');     
-     $("a").removeClass('navactive');   
-   });
-
-
-</script>
-<script>
-$(document).ready(function(){
-
-   $("div").on('touchend',function(e){
-   	 var id = $(this).attr('id');     
-     $("#nav"+id).addClass('navactive');
-     if (id == "RESUME2"){
-       $("#navRESUME").addClass('navactive');
-     }
-   });
-});
-</script>	
-	
-	
-	
-	
-	
 <script>
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("menu");
@@ -286,7 +275,15 @@ $("#danceVideo").hover(function toggleControls(){
   }
 })
 </script>
-
+<script>
+$('#danceVideo').mouseover(function(){
+  var vid = document.getElementById("danceVideo");
+    var currentTime = vid.currentTime;
+  if (currentTime != vid.duration){
+    $(this).get(0).play();
+  }
+})
+</script>
 </body>
 
 </html>
