@@ -251,7 +251,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
 
-   $("div").on('touchstart',function(e){
+   $("div").on('touchstart','touchmove',function(e){
    	 var id = $(this).attr('id');     
      $("#nav"+id).addClass('navactive');
      if (id == "RESUME2"){
