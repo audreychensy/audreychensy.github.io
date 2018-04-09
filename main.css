@@ -86,6 +86,16 @@ body {
 }
 @media screen and (max-width: 920px) {
   
+  .arrow {
+	width:70px;
+	height: 35px;
+	position: absolute;
+	top: 0;
+  right:0;
+}
+  
+  
+  
 .navbar {
   width:90%;
   left:5%;
