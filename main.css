@@ -21,6 +21,7 @@ body {
 	left: 16px;
 }
 
+
 @import "compass/css3";
 @include keyframes(bounce) {
 	0% {
@@ -64,6 +65,7 @@ body {
 
 .navbar {
 	position: absolute;
+  z-index: 99999;
 	right: 1%;
 	overflow: hidden;
 	border-style: solid;
@@ -89,8 +91,9 @@ body {
   .arrow {
 	width:70px;
 	height: 35px;
+	
 	top: 0;
-  	right:0;
+  right:0;
 }
   
   
@@ -174,7 +177,7 @@ body {
 }
 
   .subHeader p{
-    font-size:25px;
+    font-size:20px !important;
   }
   
 } 
