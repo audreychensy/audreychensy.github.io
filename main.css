@@ -574,3 +574,22 @@ img {
   color:black;
 
 }
+
+.linkedinIcon, .emailIcon{
+  text-decoration: none;
+    font-size: 100px;
+  color:#007BB6;
+
+}
+
+
+.fa-linkedin-square, .fa-envelope-o{
+  color:#007BB6;
+}
+
+
+.divider{
+    width:30px;
+    height:auto;
+    display:inline-block;
+}
