@@ -227,13 +227,22 @@
 </script>
 <script>
 $(document).ready(function(){
-
-   $("div").mouseover(function(){
-   	 var id = $(this).attr('id');     
-     $("#nav"+id).addClass('navactive');
-     if (id == "RESUME2"){
-       $("#navRESUME").addClass('navactive');
-     }
+	if( $(window).width() > 600){
+	   $("div").mouseover(function(){
+		 var id = $(this).attr('id');     
+		 $("#nav"+id).addClass('navactive');
+		 if (id == "RESUME2"){
+		   $("#navRESUME").addClass('navactive');
+		 }
+		 });
+		 
+	} else {
+		 $("div").touchenter(function(){
+		 var id = $(this).attr('id');     
+		 $("#nav"+id).addClass('navactive');
+		 if (id == "RESUME2"){
+		   $("#navRESUME").addClass('navactive');
+		 }
    });
 });
 </script>
