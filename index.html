@@ -286,24 +286,7 @@ $("#danceVideo").hover(function toggleControls(){
   }
 })
 </script>
-<script>
-$('#danceVideo').mouseover(function(){
-  var vid = document.getElementById("danceVideo");
-    var currentTime = vid.currentTime;
-  if (currentTime != vid.duration){
-    $(this).get(0).play();
-  }
-})
-</script>
-	<script>
-$('#danceVideo').on('touchstart',function(e){
-  var vid = document.getElementById("danceVideo");
-    var currentTime = vid.currentTime;
-  if (currentTime != vid.duration){
-    $(this).get(0).play();
-  }
-})
-</script>
+
 </body>
 
 </html>
