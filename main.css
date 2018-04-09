@@ -64,7 +64,7 @@ body {
 
 .navbar {
 	position: absolute;
-	right: 30px;
+	right: 1%;
 	overflow: hidden;
 	border-style: solid;
 	border-radius: 7px;
@@ -85,31 +85,37 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 }
 @media screen and (max-width: 920px) {
+  
 .navbar {
-	
+  width:90%;
+  left:5%;
+  right:5%;
+  position:relative;
+	float: center;
+  background-color:rgb(252, 238, 229);
 }
+  
+  .sticky{
+    top:0 !important;
+  }
 
 .navbar a {
-	height: 30px;
-	width: 80px;
-	display: block;
-	color: black;
-	border-radius: 5px;
-	text-align: center;
-	padding: 5px 5px;
-	text-decoration: none;
+	display:inline;
 	font-size: 10px;
-	font-family: Verdana, Helvetica, sans-serif;
+ // color:white !important;
 }
+  
+
+  
   .position p{
 	line-height: 100%;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 16px !important;
 	color: #6E0E0A; //#D74E09;
 }
 
 .description p{
-	font-size: 17px;
+	font-size: 15px !important;
   line-height:110%;
 }
 
@@ -118,7 +124,7 @@ body {
 .companyheader p{
 	line-height: 100%;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px !important;
 	color: #3E7A73; //#235789;
   margin:0;
 }
@@ -145,7 +151,7 @@ body {
   
 
 .lineDecor p {
-	font-size: 28px;
+	font-size: 25px;
 }
 
 .lineDecor p::before,
