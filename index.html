@@ -227,26 +227,44 @@
 </script>
 <script>
 $(document).ready(function(){
-	if( $(window).width() > 600){
-	   $("div").mouseover(function(){
-		 var id = $(this).attr('id');     
-		 $("#nav"+id).addClass('navactive');
-		 if (id == "RESUME2"){
-		   $("#navRESUME").addClass('navactive');
-		 }
-		 });
-		 
-	} else {
-		 $("div").touchenter(function(){
-		 var id = $(this).attr('id');     
-		 $("#nav"+id).addClass('navactive');
-		 if (id == "RESUME2"){
-		   $("#navRESUME").addClass('navactive');
-		 }
+
+   $("div").mouseover(function(){
+   	 var id = $(this).attr('id');     
+     $("#nav"+id).addClass('navactive');
+     if (id == "RESUME2"){
+       $("#navRESUME").addClass('navactive');
+     }
    });
-	}
 });
 </script>
+	
+	
+<script>
+
+   $("div").on('touchstart',function(e){
+   	 var id = $(this).attr('id');     
+     $("a").removeClass('navactive');   
+   });
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+   $("div").on('touchend',function(e){
+   	 var id = $(this).attr('id');     
+     $("#nav"+id).addClass('navactive');
+     if (id == "RESUME2"){
+       $("#navRESUME").addClass('navactive');
+     }
+   });
+});
+</script>	
+	
+	
+	
+	
+	
 <script>
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("menu");
