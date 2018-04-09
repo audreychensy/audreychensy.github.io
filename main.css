@@ -171,7 +171,7 @@ body {
 	display: inline-block;
 	content: "";
 	border-top: .1rem solid black;
-	width: 3rem;
+	width: 1rem;
 	margin: 0 1rem;
 	transform: translateY(-0.5rem);
 }
@@ -179,6 +179,15 @@ body {
   .subHeader p{
     font-size:20px !important;
   }
+  
+  .danceIntro h2{
+    font-size:15px !important;
+  }
+  
+  .danceIntro p{
+    font-size:18px !important;
+  }
+  
   
 } 
   
@@ -192,6 +201,9 @@ body {
   font-size:20px;
 }
 
+.danceIntro h2{
+    font-weight:100;
+  }
 
 .navbar a:link {
 	color: black;
