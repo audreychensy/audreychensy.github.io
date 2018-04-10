@@ -105,9 +105,9 @@ body {
 
 
 #coverpage {
-  width: 100vw ;
+  width: auto ;
   max-width: 100% ;
-  height: 100vh;
+  height: auto ;
 	
 }
 
