@@ -11,21 +11,18 @@ body {
   
   .arrow {
 	width:70px;
-	height: 35px;
-	
+	height: 35px;	
 	top: 0;
-  right:0;
+	right:0;
 }
   
-  
-  
 .navbar {
-  width:90%;
-  left:5%;
-  right:5%;
-  position:relative;
+	width:90%;
+	left:5%;
+	right:5%;
+	position:relative;
 	float: center;
-  background-color:rgb(252, 238, 229);
+	background-color:rgb(252, 238, 229);
 }
   
   .sticky{
@@ -35,10 +32,7 @@ body {
 .navbar a {
 	display:inline;
 	font-size: 10px;
- // color:white !important;
 }
-  
-
   
   .position p{
 	line-height: 100%;
@@ -51,8 +45,6 @@ body {
 	font-size: 10px !important;
   line-height:110%;
 }
-
-
 
 .companyheader p{
 	line-height: 100%;
@@ -196,7 +188,7 @@ img {
 	color: black;
 	text-align: center;
 	right: 80px;
-	bottom: -10px;
+	bottom: 10px;
 }
 
 .arrow i:hover {
