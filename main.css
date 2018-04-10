@@ -5,87 +5,8 @@ body {
 	background-color: rgb(252, 238, 229);
 }
 
-#coverpage {
-	//height: 100vh;
-	//width: 100vw;
-	//width: auto;
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
-	
-}
+/* Mobile Version */
 
-#arrow {
-	position: relative;
-	bottom: 10px;
-	left: 16px;
-}
-
-
-@import "compass/css3";
-@include keyframes(bounce) {
-	0% {
-		@include transform(translateY(0));
-	}
-	30% {
-		@include transform(translateY(-30px));
-	}
-	30% {
-		@include transform(translateY(-15px));
-	}
-}
-
-.arrow {
-	width: 120px;
-	height: 55px;
-	overflow: hidden;
-	position: absolute;
-	background-color: #3E7A73;
-	border-radius: 15px;
-	color: black;
-	text-align: center;
-	right: 80px;
-	bottom: -10px;
-}
-
-.arrow i:hover {
-	color: white;
-}
-
-.bounce {
-	@include animation(bounce 2s infinite);
-}
-
-
-#profilePic{
-    width: auto ;
-  max-width: 20% ;
-  height: auto ;
-  }
-
-.navbar {
-	position: absolute;
-  z-index: 99999;
-	right: 1%;
-	overflow: hidden;
-	border-style: solid;
-	border-radius: 7px;
-	border-collapse: separate;
-	border-spacing: 0px;
-}
-
-.navbar a {
-	height: 50px;
-	width: 160px;
-	display: block;
-	color: black;
-	border-radius: 5px;
-	text-align: center;
-	padding: 10px 10px;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: Verdana, Helvetica, sans-serif;
-}
 @media screen and (max-width: 920px) {
   
   .arrow {
@@ -186,25 +107,136 @@ body {
   
   .danceIntro p{
     font-size:18px !important;
-  }
-  
-  
+  }  
 } 
-  
-#danceVideo{  
-  width: 40%;
-  height: auto;
-}
-  
-  
-#fallInLove {
-  font-size:20px;
+
+
+
+#coverpage {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+	
 }
 
-.danceIntro h2{
-    font-weight:100;
-  }
 
+
+
+
+
+
+/* General Properties */
+.subHeader {
+	line-height: 80%;
+	padding: 15px;
+	border: 1px;
+	text-align: center;
+	font-size: 30px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.lineDecor {
+	font-family: Book Antiqua;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+.lineDecor ::before,
+.lineDecor ::after {
+	display: inline-block;
+	content: "";
+	border-top: .1rem solid black;
+	width: 7rem;
+	margin: 0 1rem;
+	transform: translateY(-0.5rem);
+}
+
+
+/* Bouncing Arrow */
+#arrow {
+	position: relative;
+	bottom: 10px;
+	left: 16px;
+}
+
+@import "compass/css3";
+@include keyframes(bounce) {
+	0% {
+		@include transform(translateY(0));
+	}
+	30% {
+		@include transform(translateY(-30px));
+	}
+	30% {
+		@include transform(translateY(-15px));
+	}
+}
+
+.arrow {
+	width: 120px;
+	height: 55px;
+	overflow: hidden;
+	position: absolute;
+	background-color: #3E7A73;
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	right: 80px;
+	bottom: -10px;
+}
+
+.arrow i:hover {
+	color: white;
+}
+
+.bounce {
+	@include animation(bounce 2s infinite);
+}
+
+
+
+
+
+
+
+/* Navigation bar/Menu*/
+.navbar {
+	position: absolute;
+  z-index: 99999;
+	right: 1%;
+	overflow: hidden;
+	border-style: solid;
+	border-radius: 7px;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.navbar a {
+	height: 50px;
+	width: 160px;
+	display: block;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Verdana, Helvetica, sans-serif;
+}
 .navbar a:link {
 	color: black;
 }
@@ -225,128 +257,27 @@ body {
 	border-style: solid;
 }
 
-* {
-	box-sizing: border-box;
+
+
+
+
+/* Profile section */
+#profilePic{
+    width: auto ;
+  max-width: 20% ;
+  height: auto ;
+  }
+  
+#fallInLove {
+  font-size:20px;
 }
 
-.expEntry{
-  background-color:white;
-}
-
-.row::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-[class*="col-"] {
-	float: left;
-	padding: 15px;
-	border: 1px;
-}
-
-.col-1 {
-	width: 8.33%;
-}
-
-.col-2 {
-	width: 16.66%;
-}
-
-.col-3 {
-	width: 25%;
-}
-
-.col-4 {
-	width: 33.33%;
-}
-
-.col-5 {
-	width: 41.66%;
-}
-
-.col-6 {
-	width: 50%;
-}
-
-.col-7 {
-	width: 58.33%;
-}
-
-.col-8 {
-	width: 66.66%;
-}
-
-.col-9 {
-	width: 75%;
-}
-
-.col-10 {
-	width: 83.33%;
-}
-
-.col-11 {
-	width: 91.66%;
-}
-
-.col-12 {
-	width: 100%;
-}
-
-.expEntry {
+ .expEntry{
 	font-family: 'Lucida Grande';
-  background-color:white;
-}
-
-.subHeader {
-	line-height: 80%;
-	padding: 15px;
-	border: 1px;
-	text-align: center;
-	font-size: 30px;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-.lineDecor {
-	font-family: Book Antiqua;
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-}
-
-
-
-.lineDecor ::before,
-.lineDecor ::after {
-	display: inline-block;
-	content: "";
-	border-top: .1rem solid black;
-	width: 7rem;
-	margin: 0 1rem;
-	transform: translateY(-0.5rem);
-}
-
+	background-color:white;
+} 
 #PROFILE {
 	background: white;
-}
-
-.bgw {
-	background: white;
-	height: 270px;
-}
-
-.longbgw {
-	background: white;
-	height: 10px;
-}
-
-.pic1 {
-	text-align: right;
-	padding: 3px;
 }
 
 .text-content {
@@ -355,20 +286,12 @@ img {
 	margin: 0;
 }
 
-.description {
-	font-size: 19px;
-}
-
-
-
 .companyheader {
 	line-height: 80%;
 	font-weight: bold;
 	font-size: 22px;
 	color: #3E7A73; //#235789;
 }
-
-
 
 .position {
 	line-height: 90%;
@@ -377,16 +300,25 @@ img {
 	color: #6E0E0A; //#D74E09;
 }
 
-.description {
-	line-height: 150%;
+.description p{
+	line-height: 120%;
+	font-size: 19px;
 }
 
+
+
+
+
+
+
+
+
+/* Resume Section */
 #RESUME {
 	padding: 0;
 	margin: 0;
 	background-color: rgb(252, 238, 229);
 }
-
 
 .flex a {
 	font-size: 16px;
@@ -403,8 +335,6 @@ img {
 .flex a:active {
 	color: white;
 }
-
-
 .flex {
 	padding: 0px;
 	margin: 0px;
@@ -468,6 +398,24 @@ img {
 }
 
 
+
+
+/* Me Section */
+#ME {
+	background: white;
+}
+
+#danceVideo{  
+  width: 40%;
+  height: auto;
+}
+  
+.danceIntro h2{
+    font-weight:100;
+  }
+ 
+
+ /* photo gallery */
 .rowpic {
 	display: -ms-flexbox;
 	/* IE10 */
@@ -493,9 +441,6 @@ img {
 	vertical-align: middle;
 }
 
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-
 @media screen and (max-width: 800px) {
 	.column {
 		-ms-flex: 50%;
@@ -506,28 +451,19 @@ img {
 	.rowpic {
 	margin-left: 0px;
 	margin-right: 0px;
+	}
 }
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
 	.column {
 		-ms-flex: 100%;
 		flex: 100%;
 		max-width: 100%;
-	}
-	
+	}	
 	.rowpic {
 	margin-left:0px;
 	margin-right:0px;
-}
-}
-
-.deepbgw {
-	background: white;
-	height: 2500px;
+	}
 }
 
 .container {
@@ -555,11 +491,11 @@ img {
 	opacity: 1;
 }
 
-#ME {
-	background: white;
-}
 
 
+
+
+/* Contact me Section */
 .linkBtn{
   background-color: white;
     color: black;
@@ -582,11 +518,9 @@ img {
 
 }
 
-
 .fa-linkedin-square, .fa-envelope-o{
   color:#007BB6;
 }
-
 
 .divider{
     width:30px;
