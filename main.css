@@ -5,102 +5,6 @@ body {
 	background-color: rgb(252, 238, 229);
 }
 
-/* Mobile Version */
-
-@media screen and (max-width: 920px) {
-  
-  .arrow {
-	width:70px;
-	height: 35px;	
-	top: 0;
-	right:0;
-}
-  
-.navbar {
-	width:90%;
-	left:5%;
-	right:5%;
-	position:relative;
-	float: center;
-	background-color:rgb(252, 238, 229);
-}
-  
-  .sticky{
-    top:0 !important;
-  }
-
-.navbar a {
-	display:inline;
-	font-size: 10px;
-}
-  
-  .position p{
-	line-height: 100%;
-	font-weight: bold;
-	font-size: 16px !important;
-	color: #6E0E0A; //#D74E09;
-}
-
-.description p{
-	font-size: 10px !important;
-  line-height:110%;
-}
-
-.companyheader p{
-	line-height: 100%;
-	font-weight: bold;
-	font-size: 20px !important;
-	color: #3E7A73; //#235789;
-  margin:0;
-}
-
-  .pic1 {
-	text-align: left;
-	padding: 3px;
-}
-  
-  .subHeader h1{
-	line-height: 80%;
-	padding: 15px;
-	border: 1px;
-	text-align: center;
-	font-size: 40px;
-}
-  #profilePic{
-  max-width: 30% ;
-  }
-  
-  #fallInLove p{
-  font-size:18px;
-}
-  
-
-.lineDecor p {
-	font-size: 25px;
-}
-
-.lineDecor p::before,
-.lineDecor p::after {
-	display: inline-block;
-	content: "";
-	border-top: .1rem solid black;
-	width: 1rem;
-	margin: 0 1rem;
-	transform: translateY(-0.5rem);
-}
-
-  .subHeader p{
-    font-size:20px !important;
-  }
-  
-  .danceIntro h2{
-    font-size:15px !important;
-  }
-  
-  .danceIntro p{
-    font-size:18px !important;
-  }  
-} 
 
 
 
@@ -110,8 +14,6 @@ body {
   height: auto ;
 	
 }
-
-
 
 
 
@@ -519,3 +421,108 @@ img {
     height:auto;
     display:inline-block;
 }
+
+
+
+
+
+
+
+
+
+/* Mobile Version */
+
+@media screen and (max-width: 920px) {
+  
+  .arrow {
+	width:70px;
+	height: 35px;	
+	top: 0;
+	right:0;
+}
+  
+.navbar {
+	width:90%;
+	left:5%;
+	right:5%;
+	position:relative;
+	float: center;
+	background-color:rgb(252, 238, 229);
+}
+  
+  .sticky{
+    top:0 !important;
+  }
+
+.navbar a {
+	display:inline;
+	font-size: 10px;
+}
+  
+  .position p{
+	line-height: 100%;
+	font-weight: bold;
+	font-size: 16px !important;
+	color: #6E0E0A; //#D74E09;
+}
+
+.description p{
+	font-size: 10px !important;
+  line-height:110%;
+}
+
+.companyheader p{
+	line-height: 100%;
+	font-weight: bold;
+	font-size: 20px !important;
+	color: #3E7A73; //#235789;
+  margin:0;
+}
+
+  .pic1 {
+	text-align: left;
+	padding: 3px;
+}
+  
+  .subHeader h1{
+	line-height: 80%;
+	padding: 15px;
+	border: 1px;
+	text-align: center;
+	font-size: 40px;
+}
+  #profilePic{
+  max-width: 30% ;
+  }
+  
+  #fallInLove p{
+  font-size:18px;
+}
+  
+
+.lineDecor p {
+	font-size: 25px;
+}
+
+.lineDecor p::before,
+.lineDecor p::after {
+	display: inline-block;
+	content: "";
+	border-top: .1rem solid black;
+	width: 1rem;
+	margin: 0 1rem;
+	transform: translateY(-0.5rem);
+}
+
+  .subHeader p{
+    font-size:20px !important;
+  }
+  
+  .danceIntro h2{
+    font-size:15px !important;
+  }
+  
+  .danceIntro p{
+    font-size:18px !important;
+  }  
+} 
